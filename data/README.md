@@ -17,4 +17,4 @@ The dataset was obtained from **CMNPD (Collection of Marine Natural Products Dat
    - Select `Year > 2000`  
    - Select desired **organism group(s)** (e.g., Bacteria, Fungi, Animalia)  
 3. Export the results as `.sdf` file(s).  
-4. Place the downloaded `.sdf` files into the `data/raw/` folder, e.g.:
+4. Place the downloaded `.sdf` files into the `data/raw/` folder, e.g.: data/raw/animalia.sdf (complete set before and after 2000)
