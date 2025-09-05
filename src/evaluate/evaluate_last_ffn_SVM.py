@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import Normalize
 
 fp_path = "CMNPD2.0_test_set_last_FFN.csv"
-mol_path = ".../data/processed/CMNPD2.0_test_set.csv"
+mol_path = "../../data/processed/CMNPD2.0_test_set.csv"
 
 fp = pd.read_csv(fp_path)
 data = pd.read_csv(mol_path)
@@ -14,7 +14,7 @@ data = pd.read_csv(mol_path)
 X = fp.iloc[:, :]
 y = data['labels']
 
-model_path = ".../results/models/model_SVM_last_FFN.pkl"
+model_path = "../../results/models/model_SVM_last_FFN.pkl"
 
 with open(model_path, 'rb') as f:
     clf = pickle.load(f)
@@ -67,4 +67,4 @@ cbar = fig.colorbar(cax, ticks=[0, 25, 50, 75, 100])
 cbar.ax.set_yticklabels([f'{x:.0f}%' for x in cbar.get_ticks()])
 
 plt.tight_layout()
-plt.savefig('.../results/figures/CMNPD2.0_test_set_ConfusionMatrix_SVM.svg',format='svg')
+plt.savefig('../../results/figures/CMNPD2.0_test_set_ConfusionMatrix_SVM.svg',format='svg')

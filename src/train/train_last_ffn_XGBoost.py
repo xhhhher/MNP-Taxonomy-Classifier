@@ -5,7 +5,7 @@ from sklearn.metrics import confusion_matrix, f1_score
 from sklearn.model_selection import train_test_split
 
 fp = pd.read_csv('last_FFN.csv')
-data = pd.read_csv('.../data/processed/data_cmnpd_after2000.csv')
+data = pd.read_csv('../../data/processed/data_cmnpd_after2000.csv')
 
 X = fp.iloc[:, :] 
 y = data['labels'] 

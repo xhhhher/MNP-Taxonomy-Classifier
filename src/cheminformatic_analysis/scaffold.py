@@ -99,7 +99,7 @@ def main():
     axes[1].set_title('Overlap of Morgan Fingerprint Clusters')
     
     plt.tight_layout()
-    plt.savefig('.../results/figures/scaffold_venn.svg',format='svg')
+    plt.savefig('../../results/figures/scaffold_venn.svg',format='svg')
 
 if __name__ == "__main__":
     main()

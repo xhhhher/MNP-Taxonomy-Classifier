@@ -44,4 +44,4 @@ for i, prop in enumerate(properties):
     ax.set_title(f'{prop}')
 
 plt.tight_layout()
-plt.savefig('.../results/figures/properties_taxonomy.svg',format='svg')
+plt.savefig('../../results/figures/properties_taxonomy.svg',format='svg')

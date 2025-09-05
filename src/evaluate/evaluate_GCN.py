@@ -7,7 +7,7 @@ from matplotlib.colors import Normalize
 df=pd.read_csv('../results/predictions/CMNPD2.0_test_set_predict.csv')
 df["pred"] = df[["pred_0", "pred_1", "pred_2"]].idxmax(axis=1).str[-1].astype(int)
 df = df.drop(columns=["pred_0", "pred_1", "pred_2"])
-df_true=pd.read_csv('.../data/processed/CMNPD2.0_test_set.csv')
+df_true=pd.read_csv('../../data/processed/CMNPD2.0_test_set.csv')
 
 true_labels = df_true['labels'].values
 predicted_labels = df['pred'].values
@@ -40,4 +40,4 @@ cbar = fig.colorbar(cax, ticks=[0, 25, 50, 75, 100])
 cbar.ax.set_yticklabels([f'{x:.0f}%' for x in cbar.get_ticks()])
 
 plt.tight_layout()
-plt.savefig('.../results/figures/CMNPD2.0_test_set_ConfusionMatrix_GCN.svg',format='svg')
+plt.savefig('../../results/figures/CMNPD2.0_test_set_ConfusionMatrix_GCN.svg',format='svg')
