@@ -5,8 +5,8 @@
 # NOTE:
 #   The --data-path argument specifies the training data file (CSV format).
 #   You can change this to any of your own processed datasets, for example:
-#     --data-path "data/processed/data_cmnpd_after2000.csv"
-#     --data-path "data/processed/trainingset.csv"
+#     --data-path "../data/processed/data_cmnpd_after2000.csv"
+#     --data-path "../data/processed/trainingset.csv"
 #
 # Usage:
 #   1) Run with the default data path:
