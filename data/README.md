@@ -20,6 +20,8 @@ The results can be directly exported as `.tsv` files.
 4. Place the downloaded `.tsv` files into the `./raw/` folder, e.g.: ./raw/CMNPD-animalia-after2000.tsv ./raw/CMNPD-bacteria-after2000.tsv ./raw/CMNPD-fungi-after2000.tsv
 5. Use the preprocessing script or notebook to read and merge the `.tsv` files.
 
+⚠️ **Note:** To fully reproduce the cheminformatic analysis described in the paper, please download the **complete CMNPD dataset** in species-specific **SDF files** (e.g. `animalia.sdf`, `bacteria.sdf`, `fungi.sdf`).  
+
 
 ### 2. NPAtlas
 
