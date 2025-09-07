@@ -29,7 +29,7 @@ def extract_properties_from_sdf(sdf_file, species_name):
 
 df_animalia = extract_properties_from_sdf("animalia.sdf", "Animalia")
 df_bacteria = extract_properties_from_sdf("bacteria.sdf", "Bacteria")
-df_fungi = extract_properties_from_sdf(fungi.sdf", "Fungi")
+df_fungi = extract_properties_from_sdf("fungi.sdf", "Fungi")
 
 df = pd.concat([df_animalia, df_bacteria, df_fungi])
 
