@@ -39,7 +39,7 @@ def generate_fingerprints(mols):
     return fingerprints
 
 def pca_and_clustering(fingerprints, n_clusters=5000):
-    pca = PCA(n_components=85)  # 降到50维
+    pca = PCA(n_components=85) 
     pca_result = pca.fit_transform(fingerprints)
     kmeans = KMeans(n_clusters=n_clusters, random_state=0)
     clusters = kmeans.fit_predict(pca_result)

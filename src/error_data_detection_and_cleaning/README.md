@@ -5,20 +5,21 @@ The purpose of these scripts is to identify mislabeled or noisy samples, evaluat
 
 ## 📂 Files
 
-- **`cross_training.py`**  
-  Implements multiple **cross-training** experiments.  
-  - Constructs stratified train/val/test splits;  
-  - Repeats splitting and training **n = 3 / 5 / 10** times;  
-  - Records performance fluctuations and misclassified samples across repeats;  
-  - In the paper, **Repeat = 10** was finally chosen as the basis for cleaning.
-
 - **`detection.ipynb`**  
   Identifies potential mislabels based on the workflow **error prediction list → similarity search in the training set**:  
   1) **Input**: a list of misclassified samples from cross-training/evaluation;  
   2) **Similarity search**: computes Morgan fingerprints (RDKit) for each misclassified sample, and retrieves highly similar molecules (default **Tanimoto ≥ 0.7**, adjustable) from the training set.  
+  
+- **`cross_training.py`**  
+  Implements multiple **cross-training** experiments.  
+  - Constructs stratified train/val/test splits;  
+  - Repeats splitting and training **n = 3 / 5 / 10** times;  
+
 
 - **`error_prediction_and_cleaning.ipynb`**  
   Integrates results from repeated cross-training, using the **10-repeat models**:  
+  - Records performance fluctuations and misclassified samples across repeats;  
+  - In the paper, **Repeat = 10** was finally chosen as the basis for cleaning;
   - Aggregates samples that were **consistently misclassified** across multiple runs;  
   - Produces the cleaned dataset used in the main experiments of the paper.
 
