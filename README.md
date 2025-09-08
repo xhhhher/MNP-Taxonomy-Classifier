@@ -1,4 +1,4 @@
-# 🧬 MNP-Taxonomy-Classifier
+# MNP-Taxonomy-Classifier
 
 This repository contains the code, datasets, trained models, and analysis scripts for the paper:  
 
@@ -8,7 +8,7 @@ Our goal is to build machine learning models (GCN, SVM, XGBoost) to classify the
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 MNP-Taxonomy-Classifier/
@@ -32,7 +32,7 @@ MNP-Taxonomy-Classifier/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 We recommend using **Python 3.11** with `conda`:
 
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Training
+## Training
 
 To train a model from processed datasets using chemprop:
 
@@ -66,7 +66,7 @@ We also provide **cross-training scripts** (`cross_training.py`) to evaluate rep
 
 ---
 
-## 🔮 Prediction
+## Prediction
 
 To generate predictions on a test set:
 
@@ -85,7 +85,7 @@ results/predictions/final_testset/
 
 ---
 
-## 🧩 Interpretability
+## Interpretability
 
 We implemented multiple interpretability approaches:
 
@@ -102,7 +102,7 @@ src/interpretability/
 
 ---
 
-## 🔍 Error Detection & Cleaning
+## Error Detection & Cleaning
 
 Noise detection is performed via:
 
@@ -118,7 +118,7 @@ src/error_data_detection_and_cleaning/
 
 ---
 
-## 📊 Results
+## Results
 
 - **Models**: stored in `results/models/`
 - **Predictions**: stored in `results/predictions/`
@@ -127,12 +127,12 @@ src/error_data_detection_and_cleaning/
 Example confusion matrix (GCN on CMNPD2.0 test set):
 
 <p align="center">
-  <img src="results/figures/ConfusionMatrix_GCN_finetuned.svg" width="400">
+  <img src="./results/figures/ConfusionMatrix_GCN_pretrained.svg" width="400">
 </p>
 
 ---
 
-## 📥 Data Sources
+## Data Sources
 
 - **CMNPD**: [https://www.cmnpd.org/](https://www.cmnpd.org/)  
 - **NPAtlas**: [https://www.npatlas.org/](https://www.npatlas.org/)  
@@ -142,7 +142,7 @@ Example confusion matrix (GCN on CMNPD2.0 test set):
 
 ---
 
-## 📌 Citation
+## Citation
 
 If you use this code or dataset, please cite our paper:
 
