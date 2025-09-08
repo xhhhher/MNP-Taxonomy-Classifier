@@ -51,11 +51,11 @@ pip install -r requirements.txt
 
 ## 🚀 Training
 
-To train a model from processed datasets:
+To train a model from processed datasets using chemprop:
 
 ```bash
-cd src
-./train.sh
+cd ./src/train
+./train_chemprop.sh
 ```
 
 Key arguments:
