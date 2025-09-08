@@ -19,12 +19,12 @@
 # Example:
 #   ./predict_chemprop.sh ../data/processed/final_test_set_smiles.csv \
 #                         ../results/predictions/final_test_set_predict.csv \
-#                         ../results/models/finetune.ckpt
+#                         ../results/models/model_GCN_cleaned_finetuned.ckpt
 # ============================================
 
 TEST_PATH="../data/processed/CMNPD2.0_test_set_smiles.csv"
 PREDS_PATH="../results/predictions/CMNPD2.0_test_set_predict.csv"
-MODEL_PATH="../results/models/finetune.ckpt"
+MODEL_PATH="../results/models/model_GCN_cleaned_finetuned.ckpt"
 
 if [ ! -z "$1" ]; then
   TEST_PATH="$1"

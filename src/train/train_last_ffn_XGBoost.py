@@ -15,4 +15,4 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_
 model_xgb = xgb.XGBClassifier(use_label_encoder=False, eval_metric='mlogloss')
 model_xgb.fit(X_train, y_train)
 
-pickle.dump(model_xgb, open('model_XGB_last_FFN.pkl', 'wb'), protocol=4)
+pickle.dump(model_xgb, open('model_XGB_after2000_all.pkl', 'wb'), protocol=4)

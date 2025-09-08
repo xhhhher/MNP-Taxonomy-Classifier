@@ -28,7 +28,7 @@ chemprop train \
     --multiclass-num-classes 3 \
     --epochs 200 \
     --batch-size 32 \
-    --output-dir "model_after2000" \
+    --output-dir "model_GCN_after2000_all" \ 
     --num-workers 0 \
     --ffn-hidden-dim 1100 \
     --ffn-num-layers 3 \

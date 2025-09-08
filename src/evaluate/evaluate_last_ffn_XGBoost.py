@@ -15,7 +15,7 @@ data = pd.read_csv(mol_path)
 X = fp.iloc[:, :]
 y = data['labels']
 
-model_path = "../../results/models/model_XGB_last_FFN.pkl"
+model_path = "../../results/models/model_XGB_after2000_all.pkl"
 
 with open(model_path, 'rb') as file:
     model_xgb = pickle.load(file)
@@ -66,4 +66,4 @@ cbar = fig.colorbar(cax, ticks=[0, 25, 50, 75, 100])
 cbar.ax.set_yticklabels([f'{x:.0f}%' for x in cbar.get_ticks()])
 
 plt.tight_layout()
-plt.savefig('../../results/figures/CMNPD2.0_test_set_ConfusionMatrix_XGB.svg',format='svg')
+plt.savefig('../../results/figures/ConfusionMatrix_XGB_after2000_all.svg',format='svg')

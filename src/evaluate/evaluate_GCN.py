@@ -40,4 +40,4 @@ cbar = fig.colorbar(cax, ticks=[0, 25, 50, 75, 100])
 cbar.ax.set_yticklabels([f'{x:.0f}%' for x in cbar.get_ticks()])
 
 plt.tight_layout()
-plt.savefig('../../results/figures/CMNPD2.0_test_set_ConfusionMatrix_GCN.svg',format='svg')
+plt.savefig('../../results/figures/ConfusionMatrix_GCN_after2000_all.svg',format='svg')
