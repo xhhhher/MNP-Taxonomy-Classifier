@@ -6,7 +6,6 @@ This repository contains the code, datasets, trained models, and analysis script
 
 Our goal is to build machine learning models to classify the biological origins (**Animalia, Bacteria, Fungi**) of natural products, detect errors in datasets' labels, and to provide **chemical interpretability analysis** for model decisions.  
 
----
 
 ## Repository Structure
 
@@ -30,7 +29,6 @@ MNP-Taxonomy-Classifier/
 └── README.md              # Project documentation
 ```
 
----
 
 ## Installation
 
@@ -47,7 +45,6 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
----
 
 ## Training
 
@@ -63,8 +60,6 @@ Key arguments:
 - `--output-dir`: output directory for checkpoints and logs
 
 We also provide **cross-training scripts** (`cross_training.py`) to evaluate repeat splits (`n=3, 5, 10`) and study label noise.
-
----
 
 ## Prediction
 
@@ -83,8 +78,6 @@ Predictions for all models (GCN / SVM / XGB) on the **final test set** are avail
 results/predictions/final_testset/
 ```
 
----
-
 ## Interpretability
 
 We implemented multiple interpretability approaches:
@@ -100,7 +93,6 @@ Scripts and notebooks are located in:
 src/interpretability/
 ```
 
----
 
 ## Error Detection & Cleaning
 
@@ -116,7 +108,6 @@ Relevant code is in:
 src/error_data_detection_and_cleaning/
 ```
 
----
 
 ## Results
 
@@ -124,7 +115,6 @@ src/error_data_detection_and_cleaning/
 - **Predictions**: stored in `results/predictions/`
 - **Figures**: scaffold overlaps, confusion matrices, t-SNE visualizations (`results/figures/`)
 
----
 
 ## Data Sources
 
