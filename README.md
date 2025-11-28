@@ -2,7 +2,7 @@
 
 This repository contains the code, datasets, trained models, and analysis scripts for the paper:  
 
-**"xxxxxx"**  
+**"A Structure-Based Deep Learning Framework for Correcting Misannotated Marine Natural Products Arising from Host–Microbe Symbiosis"**  
 
 Our goal is to build machine learning models (GCN, SVM, XGBoost) to classify the biological origins (**Animalia, Bacteria, Fungi**) of natural products, detect errors in datasets' labels, and to provide **chemical interpretability analysis** for model decisions.  
 
@@ -138,19 +138,4 @@ Example confusion matrix (GCN on CMNPD2.0 test set):
 - **NPAtlas**: [https://www.npatlas.org/](https://www.npatlas.org/)  
 - **Test set**: from our group’s CMNPD2.0 update (not yet public), formatted consistently with training data.  
 
-⚠️ Note: To reproduce cheminformatics analyses (e.g., scaffold overlap, SOM analysis), please also download the **full CMNPD dataset with per-species SDF files** (`animalia.sdf`, `bacteria.sdf`, `fungi.sdf`).  
-
----
-
-## Citation
-
-If you use this code or dataset, please cite our paper:
-
-```
-@article{xx,
-  title   = {xx},
-  author  = {xx et al.},
-  journal = {Journal xx},
-  year    = {2025}
-}
-```
+Note: To reproduce cheminformatics analyses (e.g., scaffold overlap, SOM analysis), please also download the **full CMNPD dataset with per-species SDF files** (`animalia.sdf`, `bacteria.sdf`, `fungi.sdf`).  
