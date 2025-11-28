@@ -1,9 +1,9 @@
-# 🔍 Error Data Detection and Cleaning
+# Error Data Detection and Cleaning
 
 This directory contains scripts and notebooks for **error data detection and cleaning**, corresponding to the relevant parts of the paper.  
 The purpose of these scripts is to identify mislabeled or noisy samples, evaluate their impact on model training, and generate a cleaned dataset for the development of the final model.
 
-## 📂 Files
+## Files
 
 - **`detection.ipynb`**  
   Identifies potential mislabels based on the workflow **error prediction list → similarity search in the training set**:  
@@ -23,7 +23,7 @@ The purpose of these scripts is to identify mislabeled or noisy samples, evaluat
   - Aggregates samples that were **consistently misclassified** across multiple runs;  
   - Produces the cleaned dataset used in the main experiments of the paper.
 
-## 📝 Notes
+## Notes
 
 - The analysis shows that **label noise** has a significant impact on natural product origin classification;  
 - Using **Repeat = 10** more reliably exposes problematic samples.
