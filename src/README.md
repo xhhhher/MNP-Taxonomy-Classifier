@@ -1,10 +1,9 @@
-# 🧪 Source Code (`src/`)
+# Source Code
 
 This directory contains all scripts and notebooks for the **Marine Natural Product (MNP) Taxonomy Classifier** project.  
 It is organized into submodules that correspond to different parts of the workflow described in the paper, from **data preprocessing**, **model training**, **error detection**, to **interpretability analysis**.
 
----
-## 📂 Directory Structure
+## Directory Structure
 
 ### 1. `cheminformatic_analysis/`
 Scripts for **chemical space analysis**:  
