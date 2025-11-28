@@ -1,9 +1,9 @@
-# 🧩 Interpretability Analysis  
+# Interpretability Analysis  
 
 This directory contains scripts and notebooks used for the **interpretability analysis** described in our paper.  
 The goal of this part is to understand **which chemical features or scaffolds drive the classification decisions** of our natural product origin prediction models.  
 
-## 📂 Contents
+## Contents
 
 - **`murcko_scaffold_analysis.py`**  
   Extracts Murcko scaffolds from molecules and visualizes the most frequent scaffolds per origin (Animalia, Bacteria, Fungi).  
@@ -24,7 +24,7 @@ The goal of this part is to understand **which chemical features or scaffolds dr
 - **`rationale_visualization.ipynb`**   
   Highlights which atoms or substructures contribute most strongly to the prediction, providing a molecular-level explanation of model decisions.  
 
-## 📝 Notes  
+## Notes  
 
 - Scaffold analysis was carried out using **RDKit**’s `MurckoScaffold` implementation.  
 - Monte Carlo Tree Search leverages Chemprop’s **interpretability module** (currently available only in version 1), consistent with our pipeline in the main manuscript.  
