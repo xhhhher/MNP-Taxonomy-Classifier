@@ -100,7 +100,7 @@ Noise detection is performed via:
 
 - Cross-training with multiple repeats (3 / 5 / 10)  
 - Collecting consistently misclassified samples  
-- Similarity-based literature verification (Morgan fingerprints + Tanimoto search)  
+- Similarity-based literature verification
 
 Relevant code is in:
 
