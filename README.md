@@ -124,18 +124,9 @@ src/error_data_detection_and_cleaning/
 - **Predictions**: stored in `results/predictions/`
 - **Figures**: scaffold overlaps, confusion matrices, t-SNE visualizations (`results/figures/`)
 
-Example confusion matrix (GCN on CMNPD2.0 test set):
-
-<p align="center">
-  <img src="./results/figures/ConfusionMatrix_GCN_pretrained.svg" width="400">
-</p>
-
 ---
 
 ## Data Sources
 
 - **CMNPD**: [https://www.cmnpd.org/](https://www.cmnpd.org/)  
 - **NPAtlas**: [https://www.npatlas.org/](https://www.npatlas.org/)  
-- **Test set**: from our group’s CMNPD2.0 update (not yet public), formatted consistently with training data.  
-
-Note: To reproduce cheminformatics analyses (e.g., scaffold overlap, SOM analysis), please also download the **full CMNPD dataset with per-species SDF files** (`animalia.sdf`, `bacteria.sdf`, `fungi.sdf`).  
