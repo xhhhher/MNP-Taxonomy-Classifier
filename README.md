@@ -4,7 +4,7 @@ This repository contains the code, datasets, trained models, and analysis script
 
 **"A Structure-Based Deep Learning Framework for Correcting Misannotated Marine Natural Products Arising from Host–Microbe Symbiosis"**  
 
-Our goal is to build machine learning models (GCN, SVM, XGBoost) to classify the biological origins (**Animalia, Bacteria, Fungi**) of natural products, detect errors in datasets' labels, and to provide **chemical interpretability analysis** for model decisions.  
+Our goal is to build machine learning models to classify the biological origins (**Animalia, Bacteria, Fungi**) of natural products, detect errors in datasets' labels, and to provide **chemical interpretability analysis** for model decisions.  
 
 ---
 
