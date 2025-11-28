@@ -1,4 +1,4 @@
-## 📥 Data Sources
+## Data Sources
 
 ### 1. CMNPD
 
@@ -8,7 +8,7 @@
   - **Time period**: e.g., compounds reported *after the year 2000*  
   - **Biological source**: e.g., marine bacteria, fungi, animalia, etc.  
 
-⚠️ The CMNPD website provides an interactive browser that allows filtering by **year of discovery/publication** and **source organism**.  
+**Note:** The CMNPD website provides an interactive browser that allows filtering by **year of discovery/publication** and **source organism**.  
 The results can be directly exported as `.tsv` files.
 
 **How to Prepare (CMNPD):**
@@ -20,7 +20,7 @@ The results can be directly exported as `.tsv` files.
 4. Place the downloaded `.tsv` files into the `./raw/` folder, e.g.: ./raw/CMNPD-animalia-after2000.tsv ./raw/CMNPD-bacteria-after2000.tsv ./raw/CMNPD-fungi-after2000.tsv
 5. Use the preprocessing script or notebook to read and merge the `.tsv` files.
 
-⚠️ **Note:** To fully reproduce the cheminformatic analysis described in the paper, please download the **complete CMNPD dataset** in species-specific **SDF files** (e.g. `animalia.sdf`, `bacteria.sdf`, `fungi.sdf`).  
+**Note:** To fully reproduce the cheminformatic analysis described in the paper, please download the **complete CMNPD dataset** in species-specific **SDF files** (e.g. `animalia.sdf`, `bacteria.sdf`, `fungi.sdf`).  
 
 
 ### 2. NPAtlas
@@ -29,7 +29,7 @@ The results can be directly exported as `.tsv` files.
 - File format:  **TSV (Tab-Separated Values)**
 - NPAtlas provides curated natural products with compound IDs, SMILES, and organism information.
 
-⚠️ The full dataset can be directly exported as a .tsv file.
+**Note:** The full dataset can be directly exported as a .tsv file.
 
 **How to Prepare (NPAtlas):**
 1. Go to https://www.npatlas.org/
@@ -38,7 +38,7 @@ The results can be directly exported as `.tsv` files.
 4. Use the preprocessing script or notebook to process the `.tsv` file.
 
 
-### ⚙️Processed Output
+### Processed Output
 - CMNPD processed files → ./processed/data_cmnpd_after2000.csv
 - NPAtlas processed file → ./processed/npatlas.csv
 
